@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nextspan Partners | Data, AI &amp; Business Transformation Advisory</title>
+  <meta name="description" content="Nextspan Partners works alongside leadership teams to turn data, AI, and strategic inflection points into measurable enterprise value." />
+
+  <!-- Inline SVG Data-URI Favicon (No external files required) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F172A'/%3E%3Cpath d='M18 46V18h6l16 19V18h6v28h-6L24 27v19h-6z' fill='%23FFFFFF'/%3E%3Crect x='18' y='14' width='28' height='2.5' fill='%2394A3B8'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              950: '#090E1A',
+              900: '#0F172A',
+              800: '#1E293B',
+            },
+            accent: {
+              600: '#1D4ED8',
+              700: '#1E40AF',
+            }
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-navy-900 selection:text-white">
+
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Brand Wordmark & Inline Mark -->
+      <a href="#" class="flex items-center gap-3 group">
+        <svg class="w-8 h-8 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#0F172A" />
+          <path d="M18 46V18h6l16 19V18h6v28h-6L24 27v19h-6z" fill="#FFFFFF" />
+          <rect x="18" y="14" width="28" height="2.5" fill="#94A3B8" />
+        </svg>
+        <span class="font-display font-bold text-xl tracking-tight text-navy-900">
+          Nextspan <span class="font-semibold text-slate-500">Partners</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#capabilities" class="hover:text-navy-900 transition-colors">Capabilities</a>
+        <a href="#approach" class="hover:text-navy-900 transition-colors">Approach</a>
+        <a href="#about" class="hover:text-navy-900 transition-colors">About</a>
+        <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-md bg-navy-900 text-white font-medium hover:bg-navy-800 transition-colors">
+          Schedule a Briefing
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" aria-expanded="false" class="md:hidden p-2 rounded-md text-slate-700 hover:bg-slate-100">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-6 py-5 space-y-4">
+      <a href="#capabilities" class="block text-base font-medium text-slate-700 hover:text-navy-900">Capabilities</a>
+      <a href="#approach" class="block text-base font-medium text-slate-700 hover:text-navy-900">Approach</a>
+      <a href="#about" class="block text-base font-medium text-slate-700 hover:text-navy-900">About</a>
+      <a href="#contact" class="block w-full text-center px-5 py-3 rounded-md bg-navy-900 text-white font-medium">
+        Schedule a Briefing
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-navy-950 text-white border-b border-slate-800">
+      <div class="max-w-6xl mx-auto px-6 py-24 md:py-32">
+        <div class="max-w-3xl">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 mb-6">
+            Executive Advisory &bull; Data, AI &amp; Transformation
+          </p>
+          <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] text-white mb-6">
+            Turning High-Stakes Transitions into Measurable Enterprise Value.
+          </h1>
+          <p class="text-lg sm:text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl">
+            Growth, integration, new ownership, and new technology define the moments that reshape an organization. Nextspan Partners equips leadership teams to execute across those inflection points with clarity, speed, and accountability.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#contact" class="inline-flex items-center justify-center px-7 py-3.5 rounded-md bg-white text-navy-950 font-semibold text-sm hover:bg-slate-100 transition-colors">
+              Schedule an Executive Briefing
+            </a>
+            <a href="#capabilities" class="inline-flex items-center justify-center px-7 py-3.5 rounded-md border border-slate-700 text-slate-200 font-medium text-sm hover:border-slate-500 hover:text-white transition-colors">
+              Explore Capabilities
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Capabilities -->
+    <section id="capabilities" class="py-24 bg-white border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-2xl mb-16">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 mb-3">
+            Core Capabilities
+          </p>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-navy-900 mb-4">
+            Built for Pivotal Organizational Inflection Points
+          </h2>
+          <p class="text-slate-600 text-lg leading-relaxed">
+            We translate complex data and technology initiatives into disciplined operational execution tied directly to enterprise outcomes.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Pillar 1 -->
+          <div class="p-8 rounded-lg border border-slate-200 bg-slate-50/50 hover:border-slate-300 transition-colors flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-semibold tracking-widest text-slate-400 uppercase mb-4">01 &mdash; Integration</div>
+              <h3 class="font-display text-xl font-bold text-navy-900 mb-3">
+                Post-Merger &amp; Enterprise Data Integration
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Unify fragmented systems, reporting architectures, and KPI definitions following acquisitions or restructurings—giving leadership a single, reliable source of operational truth.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-slate-200/80 text-xs font-medium text-slate-500">
+              M&amp;A Readiness &bull; Data Architecture &bull; Governance
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="p-8 rounded-lg border border-slate-200 bg-slate-50/50 hover:border-slate-300 transition-colors flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-semibold tracking-widest text-slate-400 uppercase mb-4">02 &mdash; Intelligence</div>
+              <h3 class="font-display text-xl font-bold text-navy-900 mb-3">
+                AI Strategy &amp; Operationalization
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Move beyond isolated pilots to production AI workflows that improve margin, accelerate decision cycles, and embed measurable intelligence into core business processes.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-slate-200/80 text-xs font-medium text-slate-500">
+              Use-Case Prioritization &bull; Workflow Automation &bull; ROI Discipline
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="p-8 rounded-lg border border-slate-200 bg-slate-50/50 hover:border-slate-300 transition-colors flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-semibold tracking-widest text-slate-400 uppercase mb-4">03 &mdash; Value Creation</div>
+              <h3 class="font-display text-xl font-bold text-navy-900 mb-3">
+                Ownership &amp; Growth Transformation
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Partner with CEOs, boards, and new ownership groups to modernize operating models, scale commercial analytics, and execute high-priority transformation agendas.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-slate-200/80 text-xs font-medium text-slate-500">
+              100-Day Plans &bull; Operating Model Design &bull; Executive Alignment
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engagement Model / Approach -->
+    <section id="approach" class="py-24 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-2xl mb-16">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 mb-3">
+            Engagement Model
+          </p>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-navy-900">
+            From Strategic Clarity to Disciplined Execution
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <div class="border-t-2 border-navy-900 pt-6">
+            <span class="font-display text-sm font-bold text-slate-400">STEP 01</span>
+            <h3 class="font-display text-xl font-bold text-navy-900 mt-2 mb-3">Rapid Diagnostic</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Assess data maturity, technology bottlenecks, and commercial priorities to pinpoint where transformation will generate immediate enterprise impact.
+            </p>
+          </div>
+
+          <div class="border-t-2 border-navy-900 pt-6">
+            <span class="font-display text-sm font-bold text-slate-400">STEP 02</span>
+            <h3 class="font-display text-xl font-bold text-navy-900 mt-2 mb-3">Execution Roadmap</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Establish a sequenced, board-ready operating plan with clear milestones, resource requirements, and financial accountability.
+            </p>
+          </div>
+
+          <div class="border-t-2 border-navy-900 pt-6">
+            <span class="font-display text-sm font-bold text-slate-400">STEP 03</span>
+            <h3 class="font-display text-xl font-bold text-navy-900 mt-2 mb-3">Hands-On Delivery</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Work directly beside your leadership and technical teams to drive implementation, remove cross-functional friction, and lock in lasting capability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Leadership Positioning -->
+    <section id="about" class="py-24 bg-white border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-12 items-start">
+          <div class="lg:col-span-7">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 mb-3">
+              About Nextspan Partners
+            </p>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-navy-900 mb-6">
+              Bridging Today&rsquo;s Operational Realities to Tomorrow&rsquo;s Enterprise Value
+            </h2>
+            <div class="space-y-5 text-slate-600 text-base leading-relaxed">
+              <p>
+                Every organization operates in the span between where it stands today and where market demands require it to go next. Navigating growth, post-merger integration, new ownership, or rapid AI adoption rarely follows a straight line.
+              </p>
+              <p>
+                Nextspan Partners brings senior executive experience across data, AI, and enterprise transformation directly to the decisions that matter most. We eliminate the gap between high-level advisory recommendations and ground-level execution—delivering pragmatic leadership without layers of junior delegation.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-navy-900 text-white p-8 sm:p-10 rounded-lg">
+            <h3 class="font-display text-lg font-bold mb-6 pb-4 border-b border-slate-800">
+              Why Leadership Teams Engage Nextspan
+            </h3>
+            <ul class="space-y-5 text-sm text-slate-300">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                <span><strong class="text-white font-semibold">Principal-Led Execution:</strong> Direct engagement with seasoned transformation leaders from diagnostic through delivery.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                <span><strong class="text-white font-semibold">Commercial Rigor:</strong> Every data and AI initiative is anchored to EBITDA, margin, or speed-to-market outcomes.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                <span><strong class="text-white font-semibold">Transition Specialists:</strong> Proven playbook for complex inflection points—M&amp;A, new ownership, and scale-up inflection.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-12">
+          <!-- Left Column -->
+          <div class="lg:col-span-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 mb-3">
+              Initiate a Conversation
+            </p>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-navy-900 mb-4">
+              Discuss Your Next Inflection Point
+            </h2>
+            <p class="text-slate-600 text-base leading-relaxed mb-8">
+              Whether you are preparing for integration, scaling under new ownership, or operationalizing AI across your enterprise, we welcome a confidential executive conversation.
+            </p>
+
+            <div class="space-y-4 pt-6 border-t border-slate-200">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Direct Inquiry</p>
+                <a href="mailto:info@nextspanpartners.com" class="text-base font-semibold text-navy-900 hover:underline">
+                  info@nextspanpartners.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Clean Executive Form -->
+          <div class="lg:col-span-7">
+            <form id="contact-form" class="bg-white p-8 sm:p-10 rounded-lg border border-slate-200 shadow-sm space-y-6">
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="first-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">
+                    First Name *
+                  </label>
+                  <input type="text" id="first-name" name="first_name" required
+                    class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:border-transparent" />
+                </div>
+                <div>
+                  <label for="last-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">
+                    Last Name *
+                  </label>
+                  <input type="text" id="last-name" name="last_name" required
+                    class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:border-transparent" />
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">
+                    Work Email *
+                  </label>
+                  <input type="email" id="email" name="email" required
+                    class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:border-transparent" />
+                </div>
+                <div>
+                  <label for="catalyst" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">
+                    Primary Catalyst
+                  </label>
+                  <select id="catalyst" name="catalyst"
+                    class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-navy-900 focus:border-transparent">
+                    <option value="AI Strategy & Operationalization">AI Strategy &amp; Operationalization</option>
+                    <option value="Post-Merger / Data Integration">Post-Merger / Data Integration</option>
+                    <option value="New Ownership / Value Creation">New Ownership / Value Creation</option>
+                    <option value="Growth & Operating Model Scale">Growth &amp; Operating Model Scale</option>
+                    <option value="General Executive Inquiry">General Executive Inquiry</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">
+                  Context &amp; Objectives *
+                </label>
+                <textarea id="message" name="message" rows="4" required placeholder="Briefly share your organization's current priorities or timeline..."
+                  class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:border-transparent"></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
+                <button type="submit"
+                  class="inline-flex items-center justify-center px-7 py-3.5 rounded-md bg-navy-900 text-white font-semibold text-sm hover:bg-navy-800 transition-colors cursor-pointer">
+                  Request Executive Briefing
+                </button>
+                <p id="form-status" class="text-xs text-slate-500 hidden"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div>
+        <p class="font-display font-bold text-white text-base">Nextspan Partners</p>
+        <p class="text-xs text-slate-500 mt-1">&copy; 2026 Nextspan Partners. All rights reserved.</p>
+      </div>
+      <div class="text-sm">
+        <a href="mailto:info@nextspanpartners.com" class="text-slate-300 hover:text-white transition-colors">
+          info@nextspanpartners.com
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightweight Interaction Script -->
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
+
+    menuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      });
+    });
+
+    // Static-Host Ready Contact Form Handler
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const firstName = document.getElementById('first-name').value.trim();
+      const lastName = document.getElementById('last-name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const catalyst = document.getElementById('catalyst').value;
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent(`Executive Briefing Inquiry: ${catalyst} (${firstName} ${lastName})`);
+      const body = encodeURIComponent(
+        `Name: ${firstName} ${lastName}\nWork Email: ${email}\nPrimary Catalyst: ${catalyst}\n\nContext & Objectives:\n${message}`
+      );
+
+      formStatus.textContent = 'Opening your email client to send directly to info@nextspanpartners.com...';
+      formStatus.classList.remove('hidden');
+
+      window.location.href = `mailto:info@nextspanpartners.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
